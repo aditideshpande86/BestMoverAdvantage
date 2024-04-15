@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Display</title>
+<link rel="stylesheet" href="QuoteGenerator.css">
+<!--<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 50%
+     ;
+    display: block; /* Remove any extra space below the image */
+  }
+</style> !-->
+</head>
+<body>
+  <!-- Replace the 'src' with the actual path after uploading the image to your server -->
+ 
+  <img src = "http://capitalyze.itpatil.com/wp-content/uploads/2024/04/MoversPAckers.png" width="100%" height="10%">
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 align=center>Get Best Quote</h2>
+    </div>
+    <div class="modal-body">
+      <form id="booking-form" align="center">
+         <div class="row">
+      <input type="text" id="pickupZip" name="pickupZip" placeholder="Pickup Zip Code*" pattern="\d*" minlength="5" maxlength="10" required>
+      <input type="text" id="dropZip" name="dropZip" placeholder="Drop Zip Code*" pattern="\d*" minlength="5" maxlength="10" required>
+    
+    
+    <div class="row">
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number*" required>
+      <input type="date" id="movingDate" name="movingDate" required>
+    </div>
+    
+    <div > <a href="Dashboard.html" >Get Estimates</a></div>
+    <input type="submit" value="Get Estimate" href="Dashboard.html" >
+   
+      </form>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
+

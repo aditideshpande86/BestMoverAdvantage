@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the form container */
+  .form-container {
+    color: #f4f4f4; /* Light grey background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style for form headings */
+  .form-container h2 {
+    color: #6AD4DD; /* Dark grey color */
+    font-size: 44px;
+  }
+  
+  /* Style for input fields and submit button */
+  input[type=text], input[type=tel], input[type=date], input[type=submit] {
+    width: 90%;
+    max-width: 300px; /* Maximum width of the fields */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+  }
+  
+  /* Submit button specific style */
+  input[type=submit] {
+    background-color: #6AD4DD; /* Green color */
+    color: white; 
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 10px;
+    }
+    input[type=text], input[type=tel], input[type=date], input[type=submit] {
+      width: 100%;
+    }
+     }
+  
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Dashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Chart</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Vendor', 'Satisfaction Level'],
+                ['Vendor A', 75],
+                ['Vendor B', 50],
+                ['Vendor C', 68],
+                ['Vendor D', 80]
+            ]);
+
+            var options = {
+                title: 'Customer Satisfaction for Different Vendors',
+                width: 400,
+                height: 300
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+    <div id="piechart" style="align-self: center;"></div>
+
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Vendor Name</th>
+                    <th>Cost Estimate</th>
+                    <th>Delivery Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vendor A</td>
+                    <td>$1000</td>
+                    <td>3 Days</td>
+                </tr>
+                <tr>
+                    <td>Vendor B</td>
+                    <td>$1500</td>
+                    <td>5 Days</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
